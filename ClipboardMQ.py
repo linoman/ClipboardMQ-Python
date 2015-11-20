@@ -20,7 +20,6 @@ try:
 	exchangeId = 'cmq.exchange.topic.transient'
 	exchangeType = 'topic'
 	producerRoutingKey = 'cmq.linoman'
-	consumerRoutingKey = 'cmq.*.linoman'
 
 	channel = connection.channel()
 	channel.exchange_declare(exchange=exchangeId, type=exchangeType)
